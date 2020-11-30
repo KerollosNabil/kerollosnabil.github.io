@@ -93,10 +93,10 @@
 		$(window).scroll(function(){
 
 			var $win = $(window);
-			if ($win.scrollTop() > 200) {
-				$('.js-top').addClass('active');
-			} else {
+			if ($win.scrollTop() > 200 && $win.scrollTop() < 1100) {
 				$('.js-top').removeClass('active');
+			} else {
+				$('.js-top').addClass('active');
 			}
 
 		});
